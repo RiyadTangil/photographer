@@ -14,7 +14,7 @@ const BookListDetails = ({ booking }) => {
              src={`data:image/png;base64,${booking.image.img}`}/>
             :
             <img style={{height: '50px'}} className="img-fluid mb-3" 
-            src={`http://localhost:5000/${booking.img}`} alt=""/>
+            src={`https://glacial-thicket-36813.herokuapp.com/${booking.img}`} alt=""/>
         }
                    
                  <p className="text-light p-2 rounded-3" style={{'backgroundColor': booking.status === 'Done' ? 'green' : booking.status === 'pending' ? 'red' : 'yellow'}}>{booking.status}</p>

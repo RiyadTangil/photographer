@@ -10,7 +10,7 @@ const OrderList = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:5000/orders")
+        fetch("https://glacial-thicket-36813.herokuapp.com/orders")
             .then(res => res.json())
             .then(data => setOrderList(data))
 
@@ -32,7 +32,7 @@ const OrderList = () => {
             id: productKey,
             status: status
         };
-        fetch(`http://localhost:5000/update/${productKey}`, {
+        fetch(`https://glacial-thicket-36813.herokuapp.com/update/${productKey}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(statusUpdatingInfo)

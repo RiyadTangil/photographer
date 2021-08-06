@@ -13,7 +13,7 @@ const Services = () => {
 
     const [serviceCollection, setServiceCollection] = useState([])
     useEffect(() => {
-        fetch("http://localhost:5000/service")
+        fetch("https://glacial-thicket-36813.herokuapp.com/service")
             .then(res => res.json())
             .then(data => setServiceCollection(data))
     }, [])

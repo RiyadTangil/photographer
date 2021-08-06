@@ -63,7 +63,7 @@ console.log(loggedInUser,paymentMethod.id);
       "status": "pending",
       "paymentId": paymentMethod.id
     }
-    axios.post("http://localhost:5000/addOrder", orderInfo)
+    axios.post("https://glacial-thicket-36813.herokuapp.com/addOrder", orderInfo)
       .then(res => {
         toast.dismiss(loading);
         if (res.data) {

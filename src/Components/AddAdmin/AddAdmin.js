@@ -8,7 +8,7 @@ const AddAdmin = () => {
     const handleAdmin = (e) => {
         e.preventDefault()
         const loading = toast.loading('Please wait...!');
-        fetch("http://localhost:5000/addAdmin", {
+        fetch("https://glacial-thicket-36813.herokuapp.com/addAdmin", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/Json'

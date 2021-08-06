@@ -39,7 +39,7 @@ const AddService = () => {
 
 
 
-        fetch('http://localhost:5000/addService', {
+        fetch('https://glacial-thicket-36813.herokuapp.com/addService', {
             method: 'POST',
             body: formData
         })

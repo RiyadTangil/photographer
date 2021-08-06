@@ -20,7 +20,7 @@ const Review = () => {
     const handleReview = (e) => {
         e.preventDefault();
         const loading = toast.loading('Please wait...!');
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://glacial-thicket-36813.herokuapp.com/addReview', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/Json'
